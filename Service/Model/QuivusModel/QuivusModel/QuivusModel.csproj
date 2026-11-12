@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuivusModel</RootNamespace>
     <AssemblyName>QuivusModel</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -60,11 +63,36 @@
     <Compile Include="Common\LoginDTO.cs" />
     <Compile Include="Common\RegisterationStaticDataDTO.cs" />
     <Compile Include="Common\UserClinicRoleDTO.cs" />
+    <Compile Include="Communication\EmailDTO.cs" />
     <Compile Include="Image\ImageDTO.cs" />
     <Compile Include="Insurance\InsuranceOrganizationDTO.cs" />
+    <Compile Include="PatientBackground\PatientEncounterDTO.cs" />
+    <Compile Include="PatientBackground\PatientEncounterResult.cs" />
+    <Compile Include="PatientProfileCustomization\PatientAllergyInfoDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientChronicMedicationInfoDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientDiagnosisInfoDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientImmunizationInfoDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientInsuracneInfoDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientProfileAllergyDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientProfileBasicInfoDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientProfileChronicMedicationDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientProfileDiagnosisDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientProfileImmuniztionDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientProfileInsuranceDTO.cs" />
+    <Compile Include="PatientProfileCustomization\PatientProfileTaggedDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickInput\Allergy\AllergyDTO.cs" />
+    <Compile Include="QuickInput\ChiefComplaint\ChiefComplaintDTO.cs" />
+    <Compile Include="QuickInput\ChronicDiagnosis\ChronicDiagnosisDTO.cs" />
+    <Compile Include="QuickInput\ChronicMedication\ChronicMedicationDTO.cs" />
+    <Compile Include="QuickInput\Dictation\DictationDTO.cs.cs" />
+    <Compile Include="QuickInput\Dictation\ModuleDictationDTO.cs" />
+    <Compile Include="QuickInput\Immunization\ImmunizationDTO.cs" />
+    <Compile Include="QuickInput\ModuleNotes\ModuleNoteDTO.cs" />
+    <Compile Include="QuickInput\SoapTemplate\SoapTemplateTypeDTO.cs" />
     <Compile Include="QuickLink\QuickLinkDTO.cs" />
     <Compile Include="QuivusBaseDTO.cs" />
+    <Compile Include="RecentPatient\RecentPatientDTO.cs" />
     <Compile Include="SearchEngine\SearchEngineDTO.cs" />
     <Compile Include="Common\UserClinicBranchDTO.cs" />
     <Compile Include="Search\ContactSearchDTO.cs" />
@@ -93,6 +121,7 @@
     <Compile Include="User\Patient\PatientHistoryMedicalDTO.cs" />
     <Compile Include="User\Patient\PatientInsuranceDTO.cs" />
     <Compile Include="User\UserDTO.cs" />
+    <Compile Include="Visit\VisitDTO.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
