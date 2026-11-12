@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7163AAAC-3813-48F1-9F2C-E9457FB1B998}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuivusManager.ServiceResponse</RootNamespace>
+    <AssemblyName>QuivusManager.ServiceResponse</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceCustomResponse\AdderssBook\CityResponse.cs" />
+    <Compile Include="ServiceCustomResponse\AdderssBook\ZipCodeResponse.cs" />
+    <Compile Include="ServiceCustomResponse\Allergy\AllergyTypeResponse.cs" />
+    <Compile Include="ServiceCustomResponse\CountryResponse.cs" />
+    <Compile Include="ServiceCustomResponse\EmailResponse.cs" />
+    <Compile Include="ServiceCustomResponse\ICDCode\ICDCodeResponse.cs" />
+    <Compile Include="ServiceCustomResponse\Image\ImageTypeResponse.cs" />
+    <Compile Include="ServiceCustomResponse\LoginResponse.cs" />
+    <Compile Include="ServiceCustomResponse\PatientProfileCustomization\PatientProfileAllergyResponse.cs" />
+    <Compile Include="ServiceCustomResponse\PatientProfileCustomization\PatientProfileBasicInfoResposne.cs" />
+    <Compile Include="ServiceCustomResponse\PatientProfileCustomization\PatientProfileChronicMedicationResponse.cs" />
+    <Compile Include="ServiceCustomResponse\PatientProfileCustomization\PatientProfileDiagnosisResponse.cs" />
+    <Compile Include="ServiceCustomResponse\PatientProfileCustomization\PatientProfileImmunizationResponse.cs" />
+    <Compile Include="ServiceCustomResponse\PatientProfileCustomization\PatientProfileInsuranceResponse.cs" />
+    <Compile Include="ServiceCustomResponse\QuickLinks\QuickLinkResponse.cs" />
+    <Compile Include="ServiceCustomResponse\RecentPatient\RecentPatientResponse.cs" />
+    <Compile Include="ServiceCustomResponse\SearchEngineResponse.cs" />
+    <Compile Include="ServiceCustomResponse\Search\ContactSearchResponse.cs" />
+    <Compile Include="ServiceCustomResponse\Search\PatientSearchResponse.cs" />
+    <Compile Include="ServiceCustomResponse\ServiceResponse.cs" />
+    <Compile Include="ServiceCustomResponse\StaticData\AddressBookStaticDataResponse.cs" />
+    <Compile Include="ServiceCustomResponse\StaticData\ProfileStaticDataResponse.cs" />
+    <Compile Include="ServiceCustomResponse\StaticData\RegistrationStaticDataResponse.cs" />
+    <Compile Include="ServiceCustomResponse\User\BaseUserRegistrationResponse.cs" />
+    <Compile Include="ServiceCustomResponse\User\PatientSaveResponse.cs" />
+    <Compile Include="ServiceCustomResponse\User\Patient\PatientEmergencyResponse.cs" />
+    <Compile Include="ServiceCustomResponse\User\Patient\PatientProfileResponse.cs" />
+    <Compile Include="ServiceCustomResponse\User\Patient\PatientProfileSettingResponse.cs" />
+    <Compile Include="ServiceCustomResponse\User\UserRegistrationResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuivusManager.IntegratedServies\QuivusManager.IntegratedServices.csproj">
+      <Project>{93BDBE14-B85F-467B-BB08-E2D9181BAC23}</Project>
+      <Name>QuivusManager.IntegratedServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

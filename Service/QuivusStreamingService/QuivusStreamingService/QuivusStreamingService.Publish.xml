@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://localhost:85/QuivusAir/StreamingService" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="02/23/2011 20:36:54" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="01/04/2011 16:31:17" />
+    <file relUrl="bin/QuivusModel.dll" publishTime="02/23/2011 20:36:46" />
+    <file relUrl="bin/QuivusUtility.dll" publishTime="02/23/2011 20:36:46" />
+    <file relUrl="bin/Microsoft.Practices.ServiceLocation.dll" publishTime="04/16/2010 14:16:58" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" publishTime="01/04/2011 16:31:17" />
+    <file relUrl="bin/QuivusModel.pdb" publishTime="02/23/2011 20:36:46" />
+    <file relUrl="Mailing/templates.config" publishTime="01/18/2011 16:39:04" />
+    <file relUrl="bin/QuivusUtility.pdb" publishTime="02/23/2011 20:36:46" />
+    <file relUrl="Service/StreamingService.svc" publishTime="02/23/2011 19:01:32" />
+    <file relUrl="bin/StreamingService.DataAccess.pdb" publishTime="02/23/2011 20:36:47" />
+    <file relUrl="Mailing/templates/SimpleMailByProvider.txt" publishTime="01/18/2011 16:39:04" />
+    <file relUrl="bin/StreamingService.Buisness.pdb" publishTime="02/23/2011 20:36:47" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Logging.dll" publishTime="01/04/2011 16:31:17" />
+    <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="bin/StreamingService.DataAccess.dll" publishTime="02/23/2011 20:36:47" />
+    <file relUrl="bin/Microsoft.Practices.Unity.Interception.dll" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="04/16/2010 14:16:58" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll" publishTime="01/04/2011 16:31:17" />
+    <file relUrl="bin/StreamingService.Buisness.dll" publishTime="02/23/2011 20:36:47" />
+    <file relUrl="bin/QuivusStreamingService.pdb" publishTime="02/23/2011 20:36:47" />
+    <file relUrl="bin/QuivusStreamingService.dll" publishTime="02/23/2011 20:36:47" />
+  </publishProfile>
+</publishData>
