@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37906.3 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuivusStreamingService", "QuivusStreamingService\QuivusStreamingService.csproj", "{177B0746-5558-4470-813B-E113293C39DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuivusModel", "..\Model\QuivusModel\QuivusModel\QuivusModel.csproj", "{4FB08438-241D-4F0F-B826-A6ACC43CB5FF}"
@@ -86,5 +88,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68B6B03B-7307-4D05-9D66-32FE5B7D3514}
 	EndGlobalSection
 EndGlobal
